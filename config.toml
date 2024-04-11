@@ -1,0 +1,27 @@
+# Configurations
+
+[required]
+inputdirectory = "data/in"
+outputdirectory = "data/out"
+outputmode = "json"          # Options:
+# "xml" - Splits zipped bulk XML patents writing each individual XML with all data preserved.
+# "json" - Selectively parses patent documents, writing data from each out as a standardized JSON file.
+# "parquet" - Selectively parses patent documents, writing all data from a given zip file into a single Parquet file.
+
+[output]
+parquetcompression = "snappy" # "snappy" (default), "gzip", "lz4", "zstd", "no-compress"
+
+
+[logging]
+logdirectory = "data/logfiles" # Default is "data/logfiles"
+logmode = "prod"               # "prod" (default), "dev"
+loglevel = "debug"             # "debug", "info", "warn" (default), "error", "fatal"
+
+[tuning]
+# maxconcurrentzips = 0    # Calculated by default and if set to 0
+channelbuffersize = 1000 # Default is 100
+
+
+[dev]
+cleanoutput = false      # default false - Deletes output directory at conclusion of runtime,
+parserreturnsraw = false # default false - If true, the parser will return the raw split document in addition to parsed data, otherwise it only return the parsed data.
