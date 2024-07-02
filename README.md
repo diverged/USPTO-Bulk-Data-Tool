@@ -35,4 +35,6 @@ make run
 For more advanced usage running the application from somewhere other than the root of the project directory, the executable accepts a single optional argument specifying the path to a `config.toml` file.
 
 
+## License
 
+[MIT](https://github.com/diverged/USPT-Bulk-Data-Tool/blob/main/LICENSE)
