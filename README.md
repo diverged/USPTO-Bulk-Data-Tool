@@ -37,4 +37,4 @@ For more advanced usage running the application from somewhere other than the ro
 
 ## License
 
-[MIT](https://github.com/diverged/USPT-Bulk-Data-Tool/blob/main/LICENSE)
+[MIT](https://github.com/diverged/USPTO-Bulk-Data-Tool/blob/main/LICENSE)
